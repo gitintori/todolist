@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List</title>
+        <link href="./public/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oxygen+Mono&display=swap" rel="stylesheet">  
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <nav class="navBar">
+                <div class="navBar__titleWrapper">
+                    <h2 class="navBar__titleWrapper--title">Categoria</h2>
+
+                    <button type="button" class="addButton" data-add-category>
+                        <img src="./icons/add-buttonW.svg">
+                    </button>
+                </div>
+
+                <ul data-categories></ul>
+            </nav>
+
+            <div class="cardContainer">
+                <div class="cardContainer__titleWrapper">
+                    <h2 class="cardContainer__titleWrapper--title" data-category-title>Tarefas de Casa</h2>
+
+                    <button type="button" class="addButton" data-add-button>
+                        <img src="./icons/add-buttonP.svg">
+                    </button>
+                </div>
+
+                <ul data-list class="cardContainer__cardList"></ul>
+            </div>
+        </div>
+        <script src="script.js"></script>   
+    </body>
+</html>
